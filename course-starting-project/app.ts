@@ -1,34 +1,15 @@
-/*const person : {
-    name:string;
-    age:number;
-    hobbies: string[];
-    role: [number, string];//tupple
-}= {
-  name: "Meximilian",
-  age: 30,
-  hobbies: ["Sports", "Cooking"],
-  role:[2, 'author']
-};*/
-enum Role {
-    ADMIN,
-    READ_ONLY,
-    AUTHOR
-};
+let userInput: unknown;
+let userName: string;
 
-const person ={
-  name: "Meximilian",
-  age: 30,
-  hobbies: ["Sports", "Cooking"],
-  role: Role.ADMIN
-};
+userInput = 5;
+userInput = "max";
 
-let favoriteActivities: any[];
-console.log(person.age);
-
-for (const hobby of person.hobbies) {
-  console.log(hobby.toLowerCase());
+if (typeof userInput === "string") {
+  userName = userInput;
 }
 
-if(person.role === Role.AUTHOR){
-    console.log('is author');
+function generateError(message: string, code: number): never {
+  throw { message: message, errorCode: code };
 }
+
+generateError("An error occurred", 500);
