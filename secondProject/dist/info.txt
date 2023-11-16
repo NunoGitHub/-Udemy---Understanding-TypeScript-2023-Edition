@@ -1,0 +1,3 @@
+for javascript files
+change destination in tsconfig.json in outDir
+remove comments in "removeComments": true,  

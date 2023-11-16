@@ -1,0 +1,4 @@
+for typescript files 
+change include in tsconfig.json
+ "rootDir": "./src",    
+ 
